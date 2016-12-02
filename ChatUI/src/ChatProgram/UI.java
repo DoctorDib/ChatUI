@@ -5,12 +5,6 @@
  */
 package ChatProgram;
 
-import static com.sun.org.apache.xalan.internal.xsltc.compiler.util.Type.Int;
-import java.awt.event.KeyEvent;
-import java.rmi.registry.*;
-import java.io.*;
-import java.rmi.NotBoundException;
-import java.rmi.RemoteException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
