@@ -11,7 +11,5 @@ public class Client {
 
         handle.printMessage(message);
         
-        UI.jTextArea1.setText(UI.jTextArea1.getText() + "> " + message + "\n");
-
     }
 }

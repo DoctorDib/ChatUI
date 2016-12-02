@@ -9,7 +9,8 @@ public class Server extends UnicastRemoteObject implements MyRemoteInterface{
     //This function is what we want the client to access
     @Override
     public void printMessage(String msg) throws RemoteException{
-        System.out.println(msg);
+        UI.jTextArea1.setText(UI.jTextArea1.getText() + "> " + msg + "\n");
+
     }
     
     public static void start(int port) throws Exception{

@@ -206,7 +206,7 @@ public class UI extends javax.swing.JFrame {
         
         try {
             Server.start(port);
-            jLabel1.setText("Conncted");
+            jLabel1.setText("Connected");
         } catch (Exception ex) {
             Logger.getLogger(UI.class.getName()).log(Level.SEVERE, null, ex);
             jLabel1.setText("Failed to connect!");
