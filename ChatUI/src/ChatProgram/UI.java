@@ -230,9 +230,12 @@ public class UI extends javax.swing.JFrame {
         String message;
         message = jTextField3.getText();
         
+        String name;
+        name = jTextField4.getText();
+        
         
         try {
-            Client.message(ip, port, message);
+            Client.message(ip, port, message, name);
         } catch (Exception ex) {
             Logger.getLogger(UI.class.getName()).log(Level.SEVERE, null, ex);
         }
