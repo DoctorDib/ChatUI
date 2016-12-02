@@ -9,10 +9,10 @@ public class Client {
         Registry reg = LocateRegistry.getRegistry(ip, port) ;
         MyRemoteInterface handle = (MyRemoteInterface) reg.lookup("myrmiserver");
 
-        handle.printMessage(name);
-        handle.printMessage(message);
+        //handle.printMessage(name);
+        //handle.printMessage(message);
         
         
-        UI.jTextArea1.setText(name + UI.jTextArea1.getText() + UI.jTextField4.getText() + " > " + message + "\n");
+        UI.jTextArea1.setText(UI.jTextArea1.getText() + UI.jTextField4.getText() + " > " + message + "\n");
     }
 }
